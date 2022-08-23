@@ -48,8 +48,8 @@ class Application(tk.Frame):
         messagebox.showinfo(title="Results", message=info)
 
     def execute(self):
-        self.solutions = solution(self.data_retrival())
-        self.message_box(self.solutions)
+        solutions = solution(self.data_retrival())
+        self.message_box(solutions)
         
         
 
