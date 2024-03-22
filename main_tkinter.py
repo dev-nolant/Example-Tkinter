@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox, Entry
 from merge import solution
-import random
+import secrets
+
 class Application(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
@@ -15,7 +16,7 @@ class Application(tk.Frame):
         opL = []
         i = 0
         while i < 10:
-            opL.append(random.randint(1, 10000))
+            opL.append(secrets.SystemRandom().randint(1, 10000))
             i += 1
         return opL
 
